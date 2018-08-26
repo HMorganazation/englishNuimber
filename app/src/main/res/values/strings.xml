@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">English Numbers</string>
+    <string name="todo">TODO</string>
+    <string name="welcome_txt">Welcome to learn first ten English numbers</string>
+    <string name="start">start</string>
+    <string name="zero">Zero</string>
+    <string name="you_have_learned_0_to_9">You have learned 0 to 9</string>
+    <string name="reteat">Reteat</string>
+</resources>
