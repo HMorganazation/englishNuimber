@@ -12,14 +12,24 @@
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:src="@drawable/controller" />
-    <ImageButton android:id="@+id/play_ib"
+
+    <ImageButton
+        android:id="@+id/play_ib"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:background="@drawable/play"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/image_controler"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
-        />
+        android:background="@drawable/play" />
+    <TextView android:id="@+id/congrats_tv"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20dp"
+        android:textColor="#000"
+        android:visibility="invisible"
+        android:textSize="18sp"
+        android:text="Congrats you learnt zero"
+        android:layout_below="@id/play_ib"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
 </layout>

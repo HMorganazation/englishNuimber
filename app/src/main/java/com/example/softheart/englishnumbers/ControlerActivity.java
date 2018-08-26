@@ -35,10 +35,15 @@ public class ControlerActivity extends AppCompatActivity implements View.OnClick
             case R.id.play_ib:
                 MediaPlayer mediaPlayer=MediaPlayer.create(getApplicationContext(),getSong().getMusic());
                 mediaPlayer.start();
+                displayCongratsMessage();
                 break;
             case android.R.id.home:
                 finish();
                 break;
         }
+    }
+    public void displayCongratsMessage(){
+        binding.congratsTv.setVisibility(View.VISIBLE);
+        binding.congratsTv.setText("Congrats you learnt "+getSong().getTitle());
     }
 }
