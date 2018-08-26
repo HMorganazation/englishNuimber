@@ -24,6 +24,7 @@ public class ControlerActivity extends AppCompatActivity implements View.OnClick
        binding.playIb.setOnClickListener(this);
     }
     public Song getSong(){
+        //getgsonobject
         Gson gson=new Gson();
         String songStringObj=getIntent().getStringExtra(SONG_OBJECT_KEY);
         return gson.fromJson(songStringObj,Song.class);
